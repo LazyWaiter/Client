@@ -1,0 +1,32 @@
+.containerCommand {
+    margin: auto;
+    width: 800px;
+    border: 1px solid black;
+}
+
+.titleCommand {
+    text-align: center;
+}
+
+.listCommand {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.listCommand li {
+    padding:10px;
+    border-top: 1px solid black;
+}
+
+.listCommand li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.listCommand li:hover {
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

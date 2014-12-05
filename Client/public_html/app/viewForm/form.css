@@ -1,0 +1,51 @@
+#WCForm{
+    width: 25.5%;
+    margin:auto;
+    border: 1px solid;
+}
+
+#WCForm .WFormContainer{
+    width: 80%;
+    margin: auto;
+}
+
+.WFormContainer div:nth-child(1){
+    border-bottom: 1px solid;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+.WFormContainer div:nth-child(1) h1{
+    font-size: 1.5em;
+}
+
+.WFormContainer div:nth-child(2)
+{
+    margin-top: 5%;
+}
+
+.WFormContainer div:nth-child(2) p{
+    font-size: 1.2em;
+    margin-bottom: 5%;
+}
+
+.WFormContainer div:nth-child(2) input{
+    display:block;
+}
+
+.WFormContainer div:nth-child(2) input:nth-child(2){
+    width: 97%;
+    line-height: 25px;
+    border-radius: 5px;
+}
+
+.WFormContainer div:nth-child(2) input:nth-last-child(1){
+    width: 40%;
+    line-height: 25px;
+    border-radius: 5px;
+    box-shadow: -2px -2px 2px grey;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
