@@ -17,21 +17,19 @@
     </head>
     <body>
         <div class="main-content">
-            <form> 
+            <form ng-controller="CommandCtrl" ng-submit="sendCommand()"> 
                 <img class="image-head" src="images/moustache.png" alt=""/>
                 <h1 class="title-head">Bienvenue</h1>
                 <hr>
                 <div class="div-input">
                     <label> Veuillez choisir une table </label>
-                    <input type="number" class="input-number"/>
+                    <select ng-model="selectedTable.value" ng-options="table.name for table in tables">
+                    </select>
                 </div>
                 <hr>
                 <div class="div-input">
-                    <label> Veuillez sélectionner un produit </label>
-                    <select> 
-                        <option> prod1 </option>
-                        <option> prod2 </option>
-                        <option> prod3 </option>
+                    <label> Veuillez sélectionner un cocktail </label>
+                    <select ng-model="selectedCocktail.value" ng-options="cocktail.name for cocktail in cocktails"> 
                     </select>
                 </div>
 
@@ -46,6 +44,7 @@
         <script src="view1/view1.js"></script>
         <script src="view2/view2.js"></script>
         <script src="view3/view3.js"></script>
+        <script src="command/command.js"></script>
         <script src="components/version/version.js"></script>
         <script src="components/version/version-directive.js"></script>
         <script src="components/version/interpolate-filter.js"></script>
