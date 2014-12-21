@@ -1,5 +1,6 @@
 'use strict';
 
+
 angular.module('myApp.command', ['ngRoute'])
 
 .controller('CommandCtrl',['$scope',function($scope) {
