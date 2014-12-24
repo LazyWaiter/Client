@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>Commander</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+<div ng-controller="enregistrementProduitsController">
+<form no-validate class="formCommand">
+	<label>Veuillez choisir un produit</label>
+	<select ng-model="user.produits">
+		<option>Coca</option>
+		<option>Fanta</option>
+		<option>Biere</option>
+	</select>
+<div>
+	<input type="submit" value="Valider" ng-click="update(user)" />
+</div>
+</form>
+<pre>master={{master | json}}</pre>
+</div>
+<script>
+angular.module('formCommand',[])
+.controller('enregistrementProduitsController',['$scope',function($scope){
+$scope.master{};
+$scope.update=function(user){
+$scope.master=angular.copy(user);
+};
+$http.post('https://github.com/LazyWaiter/DataBase', $scope.master).success(successCallback);
+}]);
+
+</script>
+</body>
+</html>
