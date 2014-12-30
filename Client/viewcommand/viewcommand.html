@@ -25,7 +25,16 @@ $scope.master{};
 $scope.update=function(user){
 $scope.master=angular.copy(user);
 };
-$http.post('https://github.com/LazyWaiter/DataBase', $scope.master).success(successCallback);
+var req = {
+ method: 'POST',
+ url: 'https://github.com/LazyWaiter/DataBase',
+ headers: {
+   'Content-Type': undefined
+ },
+ data: {$scope.master},
+}
+
+$http(req).success(function(){alert("Ajout effectué avec succès.")});
 }]);
 
 </script>
